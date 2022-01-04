@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  padding: 3px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0px;
+  flex: 100%;
+  border-radius: 30px 30px 30px 30px;
+}
+.row {
+  padding-top: 10px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+
+
+.columnup {
+  padding: 50px;
+  height: 250px; 
+  flex: 33%;
+  
+  
+}
+.columnright {
+  padding: 50px;
+  height: 250px; 
+  flex: 33%;
+  
+}
+.columnbottom {
+  padding: 50px;
+  height: 250px; 
+  flex: 33%; 
+  
+}
+.columnleft {
+  padding: 50px;
+  height: 250px; 
+  flex: 100%; 
+  
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 0px;
+ 
+}
+.navigation{
+  height: 60px;
+  background-color: rgb(126, 223, 126);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px 30px 30px 30px;
+}
+nav{
+  background-image: url(/images/spriteimage.svg);
+  height: 48px;
+  width: 250px;
+  float: right;
+
+}
+@media screen and (max-width: 768px) {
+  .columnup, .columnright, .columnbottom, .columnleft {
+    flex: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .columnup, .columnright, .columnbottom, .columnleft{
+    flex: 50%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .columnup, .columnright, .columnbottom, .columnleft{
+    flex: 50%;
+  }
+}

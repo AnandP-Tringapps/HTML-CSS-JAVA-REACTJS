@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="./images/images.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Registration form</h2>
+        </div>
+        <div class="column">
+            <form>
+                <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First name">
+                <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last name">
+                <label for="email">E-mail</label>
+                    <input type="email" id="mail" name="e-mail" placeholder="E-mail id">
+                <label for="phone_number">Phone number</label>
+                    <input type="tel" id="phone_number" name="phone_number" placeholder="Phone number">
+                <form>
+                <h3>Gender</h3>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="others" name="gender" value="Others">
+                    <label for="others">Others</label><br><br>
+
+                <label for="country">Select Country</label>
+                    <select >
+                        <option value="india">India</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="switzerland">Switzerland</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="abudhabi">Abu Dhabi</option>
+                        <option value="england">England</option>
+                        <option value="germany">Germany</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="qatar">Qatar</option>
+                        <option value="london">London</option>
+                    </select>
+                    <label for="degree">Select Your Department</label>
+                    <select>
+                        <option value="cse">CSE</option>
+                        <option value="it">IT</option>
+                        <option value="mech">MECH</option>
+                        <option value="ece">ECE</option>
+                        <option value="e&i - ece">E&I - EEE</option>
+                        <option value="mca">MCA</option>
+                        <option value="msc">MSC</option>
+                        <option value="chemical">CHEMICAL</option>
+                        <option value="others">Others...</option>
+                    </select>
+                <label for="subject">Subject</label>
+                    <textarea name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
