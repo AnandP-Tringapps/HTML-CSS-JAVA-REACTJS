@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD OPerations
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+  
+</head>
+
+<body>
+    <div class="img">
+         <a href="/index.html"><h2><span>R</span>egistration <span>F</span>orm</h2></a>
+        <table class="reg">
+            <tr>
+                <td>
+                    
+                    <form onsubmit="event.preventDefault();onFormSubmit();" >
+                        <div>
+                            <label>Full Name</label><label class="validation-error" id="fullNameValidationError">*</label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label>Phone number</label>
+                            <input type="text" name="Phonenumber" id="Phonenumber">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div>
+                            <label>Country</label>
+                            <input type="text" name="country" id="country">
+                        </div>
+                        <div>
+                            <label>City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div>
+                            <label>Pincode</label>
+                            <input type="text" name="pincode" id="pincode">
+                        </div>
+                        <div id="gender" class="gen">
+                            <label>Gender</label>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" id="others" name="gender" value="Others">
+                            <label for="others">Others</label>
+                        </div>
+                        <div id="hobbies" for="hobbies">Select Your Hobbies</div>
+                        <input type="checkbox" id="cricket" name="hobbies" value="cricket">
+                            <label for="cricket"> Cricket</label><br>
+                            <input type="checkbox" id="youtube" name="hobbies" value="youtube">
+                            <label for="youtube"> Youtube</label><br>
+                            <input type="checkbox" id="music" name="hobbies" value="music">
+                            <label for="music"> Music</label><br>
+                            <input type="checkbox" id="others" name="hobbies" value="others">
+                            <label for="others"> Others.. </label><br><br>
+                        <div  class="button">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="regdetails">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Phone number</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th>City</th>
+                                <th>Pincode</th>
+                                <th>Gender</th>
+                                <th>Hobbies</th>
+                                <th>Choose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
