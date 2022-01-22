@@ -1,0 +1,60 @@
+.collapsetab-page {
+    background: linear-gradient(70deg, #fc6722 37%, rgba(0, 0, 0, 0) 35%);
+    padding: 25px 0 30px 0;
+    margin-top: 5%;
+}
+
+.subcollapsetab-title {
+    margin: 0px 15px;
+}
+
+.collapsetab {
+    background: linear-gradient(-70deg, #4323fc 20%, rgba(0, 0, 0, 0) 20%);
+    color: black;
+    padding: 20px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.collapsetab:after {
+    float: right;
+    content: '\002B';
+}
+
+.active:after {
+    float: right;
+    content: "\2212";
+}
+
+.content {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease-in;
+}
+
+.content a {
+    font-size: 15px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.content :nth-child(odd) {
+    color: blue;
+}
+
+.content :nth-child(even) {
+    color: rgb(250, 10, 10);
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    color: blue;
+}
