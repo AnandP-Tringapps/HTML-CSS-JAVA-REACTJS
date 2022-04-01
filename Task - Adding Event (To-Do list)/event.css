@@ -1,0 +1,47 @@
+body{
+  background-image: url(/bg.png);
+  text-align: center;
+  margin: 100px;
+  font-size: 20px;
+  border: ridge;
+  padding: 50px 10px 100px 10px;
+  border-radius: 20px;
+}
+
+#newevent, #addbutton{
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#addbutton{
+  background: black;
+  color: white;
+}
+.clear-complete, .empty, .save, .showsave{
+  background: black;
+  color: white;
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#myitem{
+  list-style-type: none;
+  padding: 20px;
+  line-height:50px
+}
+
+#addbutton:hover{
+  color: red;
+  transition: 2s;
+}
+.completed{
+  text-decoration: line-through;
+}
+
+#clear:hover , #empty:hover{
+  color: rebeccapurple;
+  transition: 2s;
+
+}

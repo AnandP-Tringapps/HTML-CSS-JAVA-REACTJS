@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/register.css">
+
+</head>
+
+<body>
+    <h1>Login Form </h1>
+    <form action=" event.html" method="get" onsubmit="return myfunction()">
+        <div class="container">
+            <label>Mobile Number </label>
+            <input type="number" name="mobile" id="mobile" required>
+            <label>Password </label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit" class="submit">Login</button> <br> <br>
+
+        </div>
+    </form>
+    <script>
+        function myfunction() {
+
+            let newObject = localStorage.getItem("data");
+            var obj = JSON.parse(newObject);
+            var mobile = document.getElementById("mobile").value;
+            var password = document.getElementById("password").value;
+            if (mobile == obj.mobile && password == obj.password) { }
+            else {
+                alert("enter correct username and password");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

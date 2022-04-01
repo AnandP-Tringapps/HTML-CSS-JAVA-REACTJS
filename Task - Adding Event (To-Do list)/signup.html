@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/register.css">
+
+</head>
+
+<body>
+
+    <h2>Registeration form</h2>
+
+
+    <form method="get" class="reg-form" action="signin.html" onsubmit="return myFunction()">
+        <label> Name</label>
+        <input type="text" class="name" id="name" required><br><br>
+        <label>Mobile Number</label>
+        <input type="number" class="mobile" id="mobile" required><br><br>
+        <label>Password</label>
+        <input type="password" class="password" id="password" required><br><br>
+        <label>Confirm Password</label>
+        <input type="password" class="conform_password" id="conform_password" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+
+
+</html>
+<script>
+
+    function myFunction() {
+        var password = document.getElementById("password").value;
+        var conform_password = document.getElementById("conform_password").value;
+
+        if (password == conform_password) {
+            alert("account created successfully");
+            var name = document.getElementById("name").value;
+            var mobile = document.getElementById("mobile").value;
+            var password = document.getElementById("password").value;
+
+            let data = {
+                name: name,
+                mobile: mobile
+
+            }
+            data.append(ocalStorage.setItem('data', JSON.stringify(data)));
+
+            localStorage.setItem('data', JSON.stringify(data));
+
+        }
+
+        else {
+            alert("Please check your Passwords !");
+            return false;
+        }
+    }
+</script>

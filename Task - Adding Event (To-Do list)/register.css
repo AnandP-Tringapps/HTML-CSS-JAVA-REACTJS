@@ -1,0 +1,74 @@
+body h2, h1{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.reg-form {
+    margin-top: 50px;
+    margin-left: 38%;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(/bg.png);
+}
+
+.reg-form label{
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+button {
+    border-radius: 10px;
+    background-color: #121412;
+    width: 50%;
+    color: WHITE;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=number],
+input[type=password] {
+    border-radius: 10px;
+    width: 50%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    margin: 50px 0 0 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin: 10px 5px;
+}
+
+.submit{
+    margin-top: 20px;
+}
+
+.container {
+    margin: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-right: 25%;
+}
+
+#mobile, #password{
+    width: 50%;
+}
+
+
