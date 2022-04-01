@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload Details</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <form method="get" id="form" action="detailpage.html" target="_blank">
+        <div>
+            <label>Upload Image here : </label><input type="file" accept="image/*" name="image" id="image" required />
+            <br><br>
+            <label>Upload JSON File here: </label><input type="file" id="json" accept=".json" required />
+            <br><br>
+            <input type="submit" id="submit">
+        </div>
+    </form>
+    <script>
+        document.querySelector("#image").addEventListener("change", function () {
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+                localStorage.setItem("image-store", reader.result);
+
+            });
+            reader.readAsDataURL(this.files[0]);
+        });
+        document.getElementById("json").addEventListener("change", function () {
+            var readfile = document.getElementById("json").files[0];
+            var fileread = new FileReader();
+            fileread.onload = function (e) {
+                var content = e.target.result;
+                var data = JSON.parse(content);
+                window.localStorage.setItem("myObject", JSON.stringify(data));
+            };
+            fileread.readAsText(readfile);
+        });
+    </script>
+</body>
+
+</html>

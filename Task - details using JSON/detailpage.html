@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display Information</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h3>Details : </h3>
+    <img id="image-show" src="" alt="Preview" width="20%" height="20%">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const recentImageDataUrl = localStorage.getItem("image-store");
+            if (recentImageDataUrl) {
+                document.querySelector("#image-show").setAttribute("src", recentImageDataUrl);
+            }
+        });
+        let newObject = window.localStorage.getItem("myObject");
+        var obj = JSON.parse(newObject);
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                var tag = document.createElement("p");
+                tag.setAttribute("class", "json-content");
+                var text = document.createTextNode(key + " : " + obj[key]);
+                tag.appendChild(text);
+                var element = document.getElementsByTagName("body")[0];
+                element.appendChild(tag);
+            }
+        }
+    </script>
+</body>
+
+</html>

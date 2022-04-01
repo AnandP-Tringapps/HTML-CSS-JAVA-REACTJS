@@ -1,0 +1,56 @@
+body {
+    border-style: dotted solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(247, 0, 255));
+}
+
+#form {
+    background-color: aliceblue;
+    height: 80%;
+    width: 80%;
+    border-style: double;
+    padding: 20px;
+    margin: 150px 80px;
+}
+
+h3 {
+    padding-left: 30%;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+label {
+    margin-left: 10%;
+    text-align: center;
+}
+
+#image {
+    margin: 10% 0 0 0;
+    font-size: 15px;
+}
+
+#json {
+    margin: 15px 0 0 0;
+    font-size: 15px;
+}
+
+#submit {
+    margin: 30px 0 10% 30%;
+    font-size: 15px;
+}
+
+#image-show {
+    margin: 20px 0 0 30%;
+    border-radius: 20px;
+}
+
+.json-content {
+    margin-left: 30%;
+}
+
+#image-show,
+.json-content {
+    display: flex;
+    flex-direction: column;
+}
