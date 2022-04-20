@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 150px;
+  height: 180px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url("https://www.bmw.co.uk/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x-series-x7-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1645602605338.jpg");
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+p{
+  padding-top: 150px;
+}
+
+.App-link {
+  color: #2939e8;
+  text-decoration: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
