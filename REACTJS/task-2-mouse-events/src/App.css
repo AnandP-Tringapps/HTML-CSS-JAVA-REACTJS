@@ -1,0 +1,63 @@
+.Mouse {
+  text-align: center;
+  font-weight: 20px;
+  margin: 50px 0;
+}
+
+.Mouse h2{
+  padding-bottom: 20px;
+  font-weight: 1px;
+}
+
+.Mouse h2 span{
+  color: rgb(249, 114, 3);
+}
+
+p, h2 {
+            font-size: 2.5em;
+            font-family: serif;
+            color: #008000;
+            text-align: center;
+            animation: animate 
+                1.5s linear infinite;
+        }
+  
+        @keyframes animate {
+            0% {
+                opacity: 1;
+            }
+  
+            50% {
+                opacity: 1;
+            }
+  
+            100% {
+                opacity: 0;
+            }
+        }
+.Mouse p span{
+  color: blue;
+}
+
+.Mouse-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+img{
+  margin: 40px;
+}
+.Mouse-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Mouse-link {
+  color: #61dafb;
+}
