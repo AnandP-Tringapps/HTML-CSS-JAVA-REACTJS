@@ -1,0 +1,86 @@
+*{
+    box-sizing: content-box;
+}
+
+#nav{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+       
+}
+#navigation{
+    text-decoration:none;
+    color: olive;
+    
+}
+
+
+#navigation:hover{
+    color: blueviolet;
+    
+}
+
+#home h1{
+    text-align: center;
+}
+
+#home img{
+    padding: 50px 60px 0 100px;
+    height: 3%;
+    width: 40%;
+   
+}
+
+#content p{
+    font-size: 20px;
+    color: rgb(222, 34, 34);
+    text-align: center;
+     
+}
+
+#content{
+    margin: 2%;
+    padding: 20px;
+
+}
+
+#content img{
+    padding: 50px 60px 0px 30%;
+    height: 3%;
+    width: 40%;
+    background-attachment: "fixed";
+
+}
+#content h1,h2{
+    text-align: center;
+    
+}
+
+#contact h1:hover,h2:hover{
+    color: red;
+   
+}
+
+#contact {
+    text-align: center;
+    padding: 20px 10px 100px px;
+    
+}
+
+#contact img{
+    width: 20%;
+
+}
+
+#label {
+    padding: 10px;
+    text-align: center;
+}
+#label a{
+    text-decoration: none;
+}
+
+#nopage{
+    text-align: center;
+    padding: 50px;
+}
