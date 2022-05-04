@@ -4,45 +4,22 @@ import FormInput from "./components/FormInput";
 
 const App = () => {
   const [values, setValues] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
+    username: "",email: "", password: "",confirmPassword: "",
   });
 
   const inputs = [
     {
-      name: "username",
-      type: "text",
-      placeholder: "Username",
-      errorMessage:"Username should be 3-15 characters ",
-      label: "Username",
-      required: true,
+      name: "username",type: "text",placeholder: "Username",errorMessage:"Username should be 3-15 characters ",label: "Username",required: true,
     },
     {  
-      name: "email",
-      type: "email",
-      placeholder: "Email",
-      errorMessage: "It should be a valid email address!",
-      label: "Email",
+      name: "email",type: "email",placeholder: "Email",errorMessage: "It should be a valid email address!",label: "Email",
     },
   
     { 
-      name: "password",
-      type: "password",
-      placeholder: "Password",
-      errorMessage:
-        "Password should be 4-8 characters",
-      label: "Password",
-      pattern: `[a-zA-Z0-9!@#$%^&*]{4,8}$`,
+      name: "password",type: "password",placeholder: "Password",errorMessage:"Password should be 4-8 characters",label: "Password",pattern: `[a-zA-Z0-9!@#$%^&*]{4,8}$`,
     },
     { 
-      name: "confirmPassword",
-      type: "password",
-      placeholder: "Confirm Password",
-      errorMessage: "Passwords don't match!",
-      label: "Confirm Password",
-      pattern: values.password,
+      name: "confirmPassword",type: "password",placeholder: "Confirm Password",errorMessage: "Passwords don't match!",label: "Confirm Password",pattern: values.password,
     },
   ];
 
